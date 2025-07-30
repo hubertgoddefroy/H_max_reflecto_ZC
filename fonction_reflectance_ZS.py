@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def reflectance_ZS(epaisseur, lambdaa, n1, n2, incidence):
-''' Cette fonction prend comme argument :
+    ''' Cette fonction prend comme argument :
     - l'épaisseur de la couche mesurée,
     - la longueur d'onde d'intérêt poiur laquelle on calcule la rélfectance,
     - l'indices de réfraction pour la longueur d'onde lambdaa
@@ -10,7 +10,7 @@ def reflectance_ZS(epaisseur, lambdaa, n1, n2, incidence):
 
     Cette fonction retourne :
     - une valeur de réflectance normalisée pour la longueur d'onde correspondante
-'''
+    '''
     n0 = 1
     r01 = (n0 - n1)/(n0 + n1)
     r12 = (n1 - n2)/(n1 + n2)
@@ -26,14 +26,14 @@ def reflectance_ZS(epaisseur, lambdaa, n1, n2, incidence):
     return reflectance_normalisee
 
 def couple_reflectance_ZS(epaisseur, n4, n7, incidence):
-''' Cette fonction prend comme argument :
+    ''' Cette fonction prend comme argument :
     - l'épaisseur de la couche mesurée,
     - les indices de réfraction en 455 et 730
     - l'angle d'incidence
 
     Cette fonction retourne :
     - un couple de reflectance normalisée [reflectance_normalisée_455, reflectance_normalisée_730]
-'''
+    '''
     n04 = 4.55
     n07 = 3.65
 
