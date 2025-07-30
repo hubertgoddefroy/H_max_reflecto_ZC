@@ -9,14 +9,14 @@ incidence = 0
 
 # bornes de recherche en nanomètres
 h_min = 0
-h_max = 100
+h_max = 600
 pas_de_recherche_lambda = 0.1
 
 # imprécision sur la mesure de réflectance : par exemple, 2,5% signifie +/- 2,5%, i.e. sur une réflectance mesurée à
 # 0,8 on prend un interval de [0,78 ; 0,82]
-precision = 0.5
+precision = 0.01
 
-ecart_minimal_nano = 20
+ecart_minimal_nano = 25
 
 antecedents = [] # liste qui va stocker toutes les épaisseurs ainsi que les bornes des intervals des intensités mesurées +/- la précision de mesure sur l'intensité
 nb_points = int(1 + (h_max - h_min)/pas_de_recherche_lambda)
